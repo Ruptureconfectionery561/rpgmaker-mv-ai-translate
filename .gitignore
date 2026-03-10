@@ -1,0 +1,10 @@
+# Generated files
+.cache
+__pycache__
+
+# ignore test game
+/test_game
+/test_game-tl
+
+# Original design prompt
+original_design.md

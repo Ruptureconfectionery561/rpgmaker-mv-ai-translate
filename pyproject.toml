@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rpgmv_translator"
+version = "0.1.0"
+description = "A CLI tool to translate RPG Maker MV games using LLMs"
+readme = "README.md"
+authors = [
+    { name = "kemsig" }
+]
+license = { text = "MIT License" }
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31.0",
+    "tqdm>=4.66.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+
+[project.scripts]
+rpgmv-translator = "rpgmv_translator.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/kemsig/rpgmaker-mv-ai-translate"
